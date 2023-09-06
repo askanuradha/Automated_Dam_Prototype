@@ -1,0 +1,404 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18877 ]
+[d frameptr 6 ]
+"18 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\7seg.c
+[v _seg_DispAll seg_DispAll `(v  1 e 1 0 ]
+"5 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\adc.c
+[v _initADC initADC `(v  1 e 1 0 ]
+"13
+[v _adc_GetConversion adc_GetConversion `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"8 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\disptask.c
+[v _on_dsp_0 on_dsp_0 `(v  1 e 1 0 ]
+"20
+[v _on_dsp_1 on_dsp_1 `(v  1 e 1 0 ]
+"4 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\extint.c
+[v _initSysExtInt initSysExtInt `(v  1 e 1 0 ]
+"10 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\isr.c
+[v _isr isr `II(v  1 e 1 0 ]
+"21 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\lcd.c
+[v _initLCD initLCD `(v  1 e 1 0 ]
+"33
+[v _lcdWriteCtrlWord lcdWriteCtrlWord `(v  1 e 1 0 ]
+"42
+[v _lcdWriteDspData lcdWriteDspData `(v  1 e 1 0 ]
+"51
+[v _lcdWriteNibble lcdWriteNibble `(v  1 e 1 0 ]
+"64
+[v _lcdCtrl_SetPos lcdCtrl_SetPos `(v  1 e 1 0 ]
+"75
+[v _lcdCtrl_FunctionSet lcdCtrl_FunctionSet `(v  1 e 1 0 ]
+"79
+[v _lcdCtrl_OnOffDisplay lcdCtrl_OnOffDisplay `(v  1 e 1 0 ]
+"88
+[v _lcdCtrl_SetEntryMode lcdCtrl_SetEntryMode `(v  1 e 1 0 ]
+"92
+[v _lcdCtrl_ClearDisplay lcdCtrl_ClearDisplay `(v  1 e 1 0 ]
+"40 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"108
+[v _initSysPins initSysPins `(v  1 e 1 0 ]
+"4 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\timer.c
+[v _initSysTimer0 initSysTimer0 `(v  1 e 1 0 ]
+"4 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\7seg.c
+[v _segTable segTable `DC[11]uc  1 e 11 0 ]
+[s S314 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"370 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16F1xxxx_DFP/1.18.352/xc8\pic\include\proc\pic16f18877.h
+[u S319 . 1 `S314 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES319  1 e 1 @11 ]
+[s S69 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"407
+[u S78 . 1 `S69 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES78  1 e 1 @12 ]
+"514
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+[s S259 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"593
+[u S268 . 1 `S259 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES268  1 e 1 @15 ]
+[s S241 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"651
+[u S246 . 1 `S241 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES246  1 e 1 @16 ]
+"676
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"738
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"800
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"862
+[v _TRISD TRISD `VEuc  1 e 1 @20 ]
+"924
+[v _TRISE TRISE `VEuc  1 e 1 @21 ]
+"1374
+[v _TMR0H TMR0H `VEuc  1 e 1 @29 ]
+"1628
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @30 ]
+"1693
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @31 ]
+"1811
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1831
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"2132
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S152 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"2166
+[s S160 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
+]
+[s S164 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S166 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+[s S170 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+]
+[u S174 . 1 `S152 1 . 1 0 `S160 1 . 1 0 `S164 1 . 1 0 `S166 1 . 1 0 `S170 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES174  1 e 1 @147 ]
+"2488
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2598
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2761
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2831
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+[s S327 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"21274
+[u S332 . 1 `S327 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES332  1 e 1 @1804 ]
+[s S90 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"21696
+[u S95 . 1 `S90 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES95  1 e 1 @1814 ]
+"29721
+[v _INTPPS INTPPS `VEuc  1 e 1 @7824 ]
+"33493
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"34113
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"34733
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"35353
+[v _ANSELD ANSELD `VEuc  1 e 1 @8025 ]
+"35787
+[v _ANSELE ANSELE `VEuc  1 e 1 @8036 ]
+"7 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\isr.c
+[v _interrupt_occur interrupt_occur `i  1 e 2 0 ]
+"8
+[v _count count `i  1 e 2 0 ]
+"40 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"67
+[v main@water_level water_level `ui  1 a 2 49 ]
+"64
+[v main@temp temp `ui  1 a 2 45 ]
+"43
+[v main@message2 message2 `[7]uc  1 a 7 32 ]
+"42
+[v main@message1 message1 `[6]uc  1 a 6 39 ]
+"45
+[v main@i i `ui  1 a 2 47 ]
+"40
+[v main@F12171 F12171 `[6]uc  1 s 6 F12171 ]
+"42
+[v main@F12173 F12173 `[7]uc  1 s 7 F12173 ]
+"107
+} 0
+"20 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\disptask.c
+[v _on_dsp_1 on_dsp_1 `(v  1 e 1 0 ]
+{
+"24
+[v on_dsp_1@water_dig0 water_dig0 `uc  1 a 1 29 ]
+"23
+[v on_dsp_1@water_dig1 water_dig1 `uc  1 a 1 28 ]
+"22
+[v on_dsp_1@water_dig2 water_dig2 `uc  1 a 1 27 ]
+"20
+[v on_dsp_1@water_level water_level `i  1 p 2 24 ]
+"31
+} 0
+"8
+[v _on_dsp_0 on_dsp_0 `(v  1 e 1 0 ]
+{
+"11
+[v on_dsp_0@temp_dig0 temp_dig0 `uc  1 a 1 29 ]
+"10
+[v on_dsp_0@temp_dig1 temp_dig1 `uc  1 a 1 28 ]
+"9
+[v on_dsp_0@temp_dig2 temp_dig2 `uc  1 a 1 27 ]
+"8
+[v on_dsp_0@temp temp `i  1 p 2 24 ]
+"18
+} 0
+"42 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\lcd.c
+[v _lcdWriteDspData lcdWriteDspData `(v  1 e 1 0 ]
+{
+[v lcdWriteDspData@x x `uc  1 a 1 wreg ]
+"43
+[v lcdWriteDspData@lower_nibble lower_nibble `uc  1 a 1 14 ]
+[v lcdWriteDspData@upper_nibble upper_nibble `uc  1 a 1 13 ]
+"42
+[v lcdWriteDspData@x x `uc  1 a 1 wreg ]
+"44
+[v lcdWriteDspData@x x `uc  1 a 1 15 ]
+"49
+} 0
+"64
+[v _lcdCtrl_SetPos lcdCtrl_SetPos `(v  1 e 1 0 ]
+{
+[v lcdCtrl_SetPos@row row `uc  1 a 1 wreg ]
+"65
+[v lcdCtrl_SetPos@ramAddr ramAddr `uc  1 a 1 19 ]
+"64
+[v lcdCtrl_SetPos@row row `uc  1 a 1 wreg ]
+[v lcdCtrl_SetPos@col col `uc  1 p 1 16 ]
+"66
+[v lcdCtrl_SetPos@row row `uc  1 a 1 18 ]
+"73
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 23 ]
+[v ___awmod@counter counter `uc  1 a 1 22 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 17 ]
+[v ___awmod@dividend dividend `i  1 p 2 19 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 15 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 14 ]
+[v ___awdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+[v ___awdiv@dividend dividend `i  1 p 2 10 ]
+"41
+} 0
+"4 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\timer.c
+[v _initSysTimer0 initSysTimer0 `(v  1 e 1 0 ]
+{
+"22
+} 0
+"108 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\main.c
+[v _initSysPins initSysPins `(v  1 e 1 0 ]
+{
+"119
+} 0
+"4 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\extint.c
+[v _initSysExtInt initSysExtInt `(v  1 e 1 0 ]
+{
+"11
+} 0
+"21 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\lcd.c
+[v _initLCD initLCD `(v  1 e 1 0 ]
+{
+"31
+} 0
+"88
+[v _lcdCtrl_SetEntryMode lcdCtrl_SetEntryMode `(v  1 e 1 0 ]
+{
+"90
+} 0
+"79
+[v _lcdCtrl_OnOffDisplay lcdCtrl_OnOffDisplay `(v  1 e 1 0 ]
+{
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 wreg ]
+"80
+[v lcdCtrl_OnOffDisplay@pattern pattern `uc  1 a 1 19 ]
+"79
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 wreg ]
+[v lcdCtrl_OnOffDisplay@cursor_state cursor_state `uc  1 p 1 16 ]
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 18 ]
+"86
+} 0
+"75
+[v _lcdCtrl_FunctionSet lcdCtrl_FunctionSet `(v  1 e 1 0 ]
+{
+"77
+} 0
+"92
+[v _lcdCtrl_ClearDisplay lcdCtrl_ClearDisplay `(v  1 e 1 0 ]
+{
+"94
+} 0
+"33
+[v _lcdWriteCtrlWord lcdWriteCtrlWord `(v  1 e 1 0 ]
+{
+[v lcdWriteCtrlWord@x x `uc  1 a 1 wreg ]
+"34
+[v lcdWriteCtrlWord@lower_nibble lower_nibble `uc  1 a 1 14 ]
+[v lcdWriteCtrlWord@upper_nibble upper_nibble `uc  1 a 1 13 ]
+"33
+[v lcdWriteCtrlWord@x x `uc  1 a 1 wreg ]
+"35
+[v lcdWriteCtrlWord@x x `uc  1 a 1 15 ]
+"40
+} 0
+"51
+[v _lcdWriteNibble lcdWriteNibble `(v  1 e 1 0 ]
+{
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 wreg ]
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 wreg ]
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 10 ]
+"60
+} 0
+"5 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\adc.c
+[v _initADC initADC `(v  1 e 1 0 ]
+{
+"10
+} 0
+"13
+[v _adc_GetConversion adc_GetConversion `(ui  1 e 2 0 ]
+{
+"15
+[v adc_GetConversion@result result `ui  1 a 2 10 ]
+"13
+[v adc_GetConversion@pin pin `i  1 p 2 8 ]
+"25
+} 0
+"10 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\isr.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"26
+} 0
+"18 C:\Users\askan\Desktop\Project_Singapore\Microcontroller\Project\HydroPlant.X\7seg.c
+[v _seg_DispAll seg_DispAll `(v  1 e 1 0 ]
+{
+"19
+[v seg_DispAll@dig1 dig1 `i  1 a 2 5 ]
+[v seg_DispAll@dig0 dig0 `i  1 a 2 3 ]
+"18
+[v seg_DispAll@result result `ui  1 p 2 0 ]
+"35
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
